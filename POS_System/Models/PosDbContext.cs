@@ -14,7 +14,7 @@ namespace POS_System.Models
         public DbSet<Order> Orders { get; set; }
         public DbSet<OrderItem> OrderItems { get; set; }
         
-        private readonly string _path = @"C:\Users\Ryan Dilanka\Downloads\final\POS_System\pos.db";
+        private readonly string _path = @"D:\UOR\ACEDEMIC\SEM 03\projects\finals\UI Group\final\POS_System\pos.db";
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             optionsBuilder.UseSqlite($"Data Source = {_path}");
